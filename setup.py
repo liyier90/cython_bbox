@@ -39,7 +39,6 @@ ext_modules = cythonize(ext_modules, compiler_directives=compiler_directives)
 
 setup(
     name="cython_bbox",
-    ext_modules=ext_modules,
     version="0.1.3",
     description="Standalone cython_bbox",
     long_description=long_description,
@@ -48,4 +47,6 @@ setup(
     author_email="samson.c.wang@gmail.com",
     url="https://github.com/samson-wang/cython_bbox.git",
     keywords=["cython_bbox"],
+    ext_modules=ext_modules,
+    install_requires=["numpy>=1.0.0"],
 )
